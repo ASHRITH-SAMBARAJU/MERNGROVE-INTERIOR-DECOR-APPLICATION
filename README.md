@@ -101,19 +101,19 @@ MernGrove is a full-stack e-commerce web application tailored for interior decor
 
 ### Frontend Setup
 
-# Clone the repo
+### Clone the repo
 ```bash
 git clone https://github.com/ASHRITH-SAMBARAJU/MERNGROVE-INTERIOR-DECOR-APPLICATION.git
 ```
-# Navigate into project directory
+### Navigate into project directory
 ```bash
 cd MERNGROVE-INTERIOR-DECOR-APPLICATION
 ```
-# Install dependencies
+### Install dependencies
 ```bash
 npm install
 ```
-# Run the development server
+### Run the development server
 ```bash
 npm start / npm run dev
 ```
