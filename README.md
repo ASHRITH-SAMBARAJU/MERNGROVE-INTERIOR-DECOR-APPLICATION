@@ -1,69 +1,102 @@
-# Welcome to your Lovable project
+# MernGrove - Interior Decor Application
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/13b60932-477c-48cf-807a-13f99fd0865c
+MernGrove is a full-stack e-commerce web application tailored for interior decor shopping. It allows users to browse, favorite, and purchase home decor products with a sleek and modern UI. The project currently focuses on the frontend experience with extendable backend support.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Key Features
 
-**Use Lovable**
+- User authentication with registration/login flow
+- Product listing with categories like featured and new arrivals
+- Add to cart, view and manage cart items
+- Wishlist functionality
+- Order confirmation screen
+- Responsive layout with clean UI
+- Extendable for admin management and backend integration
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/13b60932-477c-48cf-807a-13f99fd0865c) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+| Layer        | Tools                      |
+|--------------|-----------------------------|
+| Frontend     | React.js, Tailwind CSS, React Router |
+| State Mgmt   | Context API                 |
+| Styling      | Tailwind CSS                |
+| Backend (Planned) | Node.js, Express, MongoDB |
+| File Structure | Modular component-based design |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Output Screenshots
 
-Follow these steps:
+### Authentication Flow
+- Register Page  
+  ![Register](./src/assets/outputs/5-registerpage.png)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Login Page  
+  ![Login](./src/assets/outputs/6-loginpage.png)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+### User Flow
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- Homepage  
+  ![Homepage](./src/assets/outputs/1-homepage.png)
 
-**Edit a file directly in GitHub**
+- Product Listing  
+  ![Products](./src/assets/outputs/2-productspage.png)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Featured Products  
+  ![Featured](./src/assets/outputs/3-featuredproducts.png)
 
-**Use GitHub Codespaces**
+- New Arrivals  
+  ![New Arrivals](./src/assets/outputs/4-newarrivals.png)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Cart  
+  ![Cart](./src/assets/outputs/7-cart.png)
 
-## What technologies are used for this project?
+- Favourites  
+  ![Favourites](./src/assets/outputs/8-favourites.png)
 
-This project is built with .
+- About Page  
+  ![About](./src/assets/outputs/9-aboutpage.png)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+### Checkout Flow
 
-Simply open [Lovable](https://lovable.dev/projects/13b60932-477c-48cf-807a-13f99fd0865c) and click on Share -> Publish.
+- Step 1  
+  ![Checkout 1](./src/assets/outputs/10-checkout1.jpg)
 
-## I want to use a custom domain - is that possible?
+- Step 2  
+  ![Checkout 2](./src/assets/outputs/11-checkout2.jpg)
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- Order Confirmation  
+  ![Order Confirmation](./src/assets/outputs/12-orderconfirmation.png)
+
+---
+
+## How to Run the Project
+
+### Prerequisites
+- Node.js and npm installed
+
+---
+
+### Frontend Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/ASHRITH-SAMBARAJU/MERNGROVE-INTERIOR-DECOR-APPLICATION.git
+
+# Navigate into project directory
+cd MERNGROVE-INTERIOR-DECOR-APPLICATION
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm start
