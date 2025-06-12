@@ -79,15 +79,15 @@ MernGrove is a full-stack e-commerce web application tailored for interior decor
 ### Checkout Flow
 
 - Step 1
-- 
+  
   ![Checkout 1](./src/assets/outputs/10-checkout1.jpg)
 
 - Step 2
-- 
+  
   ![Checkout 2](./src/assets/outputs/11-checkout2.jpg)
 
 - Order Confirmation
-- 
+  
   ![Order Confirmation](./src/assets/outputs/12-orderconfirmation.png)
 
 ---
@@ -101,23 +101,28 @@ MernGrove is a full-stack e-commerce web application tailored for interior decor
 
 ### Frontend Setup
 
-```bash
 # Clone the repo
+```bash
 git clone https://github.com/ASHRITH-SAMBARAJU/MERNGROVE-INTERIOR-DECOR-APPLICATION.git
-
-# Navigate into project directory
-cd MERNGROVE-INTERIOR-DECOR-APPLICATION
-
-# Install dependencies
-npm install
-
-# Run the development server
-npm start / npm run dev
-
 ```
+# Navigate into project directory
+```bash
+cd MERNGROVE-INTERIOR-DECOR-APPLICATION
+```
+# Install dependencies
+```bash
+npm install
+```
+# Run the development server
+```bash
+npm start / npm run dev
+```
+
 ## Contact
 
-Ashrith Sambaraju
-Email: ashrithsambaraju@gmail.com
-LinkedIn: linkedin.com/in/ashrith-sambaraju
+**Ashrith Sambaraju**  
+Email: [ashrithsambaraju@gmail.com](mailto:ashrithsambaraju@gmail.com)  
+LinkedIn: [linkedin.com/in/ashrith-sambaraju](https://www.linkedin.com/in/ashrith-sambaraju)  
+
+
 
