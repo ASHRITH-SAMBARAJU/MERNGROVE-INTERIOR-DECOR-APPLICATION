@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaFacebook, FaLinkedin } from 'react-icons/fa';
 
@@ -76,5 +77,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

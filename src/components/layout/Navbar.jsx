@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Menu, X, Search, ArrowLeft, ArrowRight } from "lucide-react";
+import { ShoppingCart, Menu, X, Search, ArrowLeft, ArrowRight, RefreshCcw } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
@@ -27,6 +27,7 @@ const Navbar = ({ products }) => {
     { path: "/about", label: "About" },
   ];
 
+  // Handle Scroll Effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -35,11 +36,15 @@ const Navbar = ({ products }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Improved Search Logic with Case-Insensitive and Trimmed Filtering
   useEffect(() => {
     if (searchQuery.trim()) {
+      const query = searchQuery.trim().toLowerCase();
+
       const filtered = products?.filter((product) =>
-        product.name.toLowerCase().includes(searchQuery.toLowerCase())
+        product.name.toLowerCase().includes(query)
       ) || [];
+
       setFilteredProducts(filtered);
     } else {
       setFilteredProducts([]);
@@ -53,6 +58,11 @@ const Navbar = ({ products }) => {
     navigate("/");
   };
 
+  const handleRefresh = () => {
+    navigate("/");
+    window.location.reload();
+  };
+
   return (
     <header
       className={cn(
@@ -61,13 +71,21 @@ const Navbar = ({ products }) => {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Prev and Next Buttons */}
+        {/* Navigation Buttons */}
         <div className="flex gap-2">
           <Button variant="ghost" size="icon" onClick={() => navigate(-1)} aria-label="Go Back">
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <Button variant="ghost" size="icon" onClick={() => navigate(1)} aria-label="Go Forward">
             <ArrowRight className="h-5 w-5" />
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={handleRefresh}
+            aria-label="Refresh and Go Home"
+          >
+            <RefreshCcw className="h-5 w-5" />
           </Button>
         </div>
 
@@ -94,6 +112,7 @@ const Navbar = ({ products }) => {
         </nav>
 
         <div className="flex items-center space-x-4">
+          {/* Search Input */}
           <div className="relative">
             <input
               type="text"
@@ -103,6 +122,8 @@ const Navbar = ({ products }) => {
               className="px-4 py-2 rounded-md border w-56 outline-none focus:ring-2 focus:ring-primary"
             />
             <Search className="absolute right-3 top-2.5 text-gray-500 h-5 w-5" />
+
+            {/* Display Filtered Products */}
             {searchQuery && (
               <div className="absolute mt-2 w-full bg-white border rounded-md shadow-lg z-50">
                 {filteredProducts.length > 0 ? (
@@ -123,6 +144,7 @@ const Navbar = ({ products }) => {
             )}
           </div>
 
+          {/* Cart Icon with Item Count */}
           <Link to="/cart">
             <Button variant="ghost" size="icon" className="relative" aria-label="Cart">
               <ShoppingCart className="h-5 w-5" />
@@ -134,6 +156,7 @@ const Navbar = ({ products }) => {
             </Button>
           </Link>
 
+          {/* User Auth Section */}
           {user ? (
             <div className="flex items-center gap-3">
               <span className="text-sm font-medium text-gray-700">Hey, {user.username}</span>
@@ -149,6 +172,7 @@ const Navbar = ({ products }) => {
             </Link>
           )}
 
+          {/* Mobile Menu Toggle */}
           <Button
             variant="ghost"
             size="icon"

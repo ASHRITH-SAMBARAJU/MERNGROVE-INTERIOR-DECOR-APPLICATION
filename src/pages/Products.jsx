@@ -195,10 +195,7 @@ const Products = () => {
               {currentProducts.map((product) => (
                 <ProductCard
                   key={product.id}
-                  product={{
-                    ...product,
-                    price: formatter.format(parsePrice(product.price * 1000, 0))
-                  }}
+                  product={product}
                 />
               ))}
             </ProductGrid>
