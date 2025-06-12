@@ -33,48 +33,61 @@ MernGrove is a full-stack e-commerce web application tailored for interior decor
 ## Output Screenshots
 
 ### Authentication Flow
-- Register Page  
+
+- Register Page
+  
   ![Register](./src/assets/outputs/5-registerpage.png)
 
-- Login Page  
+- Login Page
+  
   ![Login](./src/assets/outputs/6-loginpage.png)
 
 ---
 
 ### User Flow
 
-- Homepage  
+- Homepage
+  
   ![Homepage](./src/assets/outputs/1-homepage.png)
 
-- Product Listing  
+- Product Listing
+  
   ![Products](./src/assets/outputs/2-productspage.png)
 
-- Featured Products  
+- Featured Products
+  
   ![Featured](./src/assets/outputs/3-featuredproducts.png)
 
-- New Arrivals  
+- New Arrivals
+  
   ![New Arrivals](./src/assets/outputs/4-newarrivals.png)
 
-- Cart  
+- Cart
+  
   ![Cart](./src/assets/outputs/7-cart.png)
 
-- Favourites  
+- Favourites
+  
   ![Favourites](./src/assets/outputs/8-favourites.png)
 
-- About Page  
+- About Page
+  
   ![About](./src/assets/outputs/9-aboutpage.png)
 
 ---
 
 ### Checkout Flow
 
-- Step 1  
+- Step 1
+- 
   ![Checkout 1](./src/assets/outputs/10-checkout1.jpg)
 
-- Step 2  
+- Step 2
+- 
   ![Checkout 2](./src/assets/outputs/11-checkout2.jpg)
 
-- Order Confirmation  
+- Order Confirmation
+- 
   ![Order Confirmation](./src/assets/outputs/12-orderconfirmation.png)
 
 ---
@@ -99,4 +112,12 @@ cd MERNGROVE-INTERIOR-DECOR-APPLICATION
 npm install
 
 # Run the development server
-npm start
+npm start / npm run dev
+
+```
+## Contact
+
+Ashrith Sambaraju
+Email: ashrithsambaraju@gmail.com
+LinkedIn: linkedin.com/in/ashrith-sambaraju
+
